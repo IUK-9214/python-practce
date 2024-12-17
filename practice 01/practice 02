@@ -1,0 +1,73 @@
+print ("------------------------------------------WELCOME---------------------------------------------------")
+
+sem1 = ["ENGLISH", "URDU   ", "MATH   ", "BIOLOGY"]
+sem_1 = [None, None, None, None] 
+
+for i in range(4):  
+    sem_1[i] = float(input(f"Enter the marks for {sem1[i]}: "))
+
+egp_1=(sem_1[0]/400)*4
+ugp_1=(sem_1[1]/400)*4
+mgp_1=(sem_1[2]/400)*4
+bgp_1=(sem_1[3]/400)*4
+
+sgp_1=[egp_1,ugp_1,mgp_1,bgp_1]
+
+print ("S.no |  SUBJECT  |  GRADE POINT   | ")
+for i in range(4):
+    print(f"{i}    |  {sem1[i]}  |  {sgp_1[i]}          | ")
+
+
+FSGPA=egp_1+ugp_1+mgp_1+bgp_1
+
+print (f"your semseter stgpa is {FSGPA}")
+
+#there first semster is ended
+
+sem2 = ["Data stucture", "Digital", "Data base", "Software eng"]
+sem_2 = [None, None, None, None] 
+
+for i in range(4):  
+    sem_2[i] = float(input(f"Enter the marks for {sem2[i]}: "))
+
+for i in range(4):
+    print(f"The marks for {sem2[i]} are: {sem_2[i]}")
+
+
+egp_2=(eng_2/400)*4
+ugp_2=(urdu_2/400)*4
+mgp_2=(math_2/400)*4
+bgp_2=(bio_2/400)*4
+
+sgp_2=[egp_2,ugp_2,mgp_2,bgp_2]
+
+for i in range (4):
+   print(f"The grade for {sem1[i]} are: {sgp_1[i]}")
+
+SSGPA=egp_2+ugp_2+mgp_2+bgp_2
+print (f"your semseter cgpa is {SSGPA}")
+
+
+
+
+
+
+egp_3=(eng_3/400)*4
+ugp_3=(urdu_3/400)*4
+mgp_3=(math_3/400)*4
+bgp_3=(bio_3/400)*4
+
+sem_3=[eng_3,urdu_3,math_3,bio_3]
+sgp_3=[egp_3,ugp_3,mgp_3,bgp_3]
+
+TSGPA=egp_3+ugp_3+mgp_3+bgp_3
+
+egp_4=(eng_4/400)*4
+ugp_4=(urdu_4/400)*4
+mgp_4=(math_4/400)*4
+bgp_4=(bio_4/400)*4
+
+sem_4=[eng_4,urdu_4,math_4,bio_4]
+sgp_4=[egp_4,ugp_4,mgp_4,bgp_4]
+
+FOSGPA=egp_4+ugp_4+mgp_4+bgp_4
