@@ -1,0 +1,66 @@
+rofasc = 0
+rofdesc = 0
+
+def asc():
+    global rofasc
+    print("Enter the number for ascending ")
+    number = int(input("Enter the number: "))
+    start = int(input("Enter the starting number: "))
+    end = int(input("Enter the ending number: "))
+    
+    if end > start:
+        print("The ascending order multiplication table:")
+        for i in range(start, end + 1):
+            print(f"{number} * {i} = {number * i}")
+            rofasc += number * i
+    else:
+        print("The starting number must be less than the ending number for ascending order.")
+
+def desc():
+    print("Enter the number for descending ")
+    global rofdesc  
+    number2 = int(input("Enter the number: "))
+    starts = int(input("Enter the starting number: "))
+    ends = int(input("Enter the ending number: "))
+    
+    if starts > ends:
+        print("The descending order multiplication table:")
+        for i in range(starts, ends - 1, -1):
+            print(f"{number2} * {i} = {number2 * i}")
+            rofdesc += number2 * i
+    else:
+        print("The starting number must be greater than the ending number for descending order.")
+
+def display():
+    print(f"The result of the sum of the both table is  asce : {rofasc} and desc : {rofdesc} ")
+    if rofasc != rofdesc:
+        print("Comparing the results of the ascending and descending order:")
+        
+        if rofasc > rofdesc:
+            print("For even numbers:")
+            for i in range(rofdesc, rofasc + 1):
+                if i % 2 == 0:
+                    print(f"The number is even: {i}")
+            
+            print("For odd numbers:")
+            for i in range(rofdesc, rofasc + 1):
+                if i % 2 != 0:
+                    print(f"The number is odd: {i}")
+        
+        else:
+            print("For even numbers:")
+            for i in range(rofdesc, rofasc - 1, -1):
+                if i % 2 == 0:
+                    print(f"The number is even: {i}")
+            
+            print("For odd numbers:")
+            for i in range(rofdesc, rofasc - 1, -1):
+                if i % 2 != 0:
+                    print(f"The number is odd: {i}")
+    else:
+        print("The numbers are equal.")
+
+
+asc()
+desc()
+display()
